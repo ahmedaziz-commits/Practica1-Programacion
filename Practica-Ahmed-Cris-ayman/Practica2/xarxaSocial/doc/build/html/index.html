@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="es" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to Practica2’s documentation! &#8212; documentación de Practica2 - 1.0</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=cb25574f" />
+    <script src="_static/documentation_options.js?v=4936afed"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=efdbd0b9"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="welcome-to-practica2-s-documentation">
+<h1>Welcome to Practica2’s documentation!<a class="headerlink" href="#welcome-to-practica2-s-documentation" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p id="module-usuari">Modul usuari.py</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="usuari.Usuari">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">usuari.</span></span><span class="sig-name descname"><span class="pre">Usuari</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nick</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#usuari.Usuari" title="Link to this definition">¶</a></dt>
+<dd><p>Representa un usuari de iTICApp.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">=</span> <span class="n">Usuari</span><span class="p">(</span><span class="s2">&quot;AH39&quot;</span><span class="p">,</span> <span class="s2">&quot;AH39@gmail.com&quot;</span><span class="p">,</span> <span class="s2">&quot;abracadabra&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="o">.</span><span class="n">nick</span>
+<span class="go">&#39;AH39&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+<span class="go">Usuari: AH39 Email: AH39@gmail.com Encripted password: cdtcecfcdtc</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="usuari.Usuari.get_email">
+<span class="sig-name descname"><span class="pre">get_email</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#usuari.Usuari.get_email" title="Link to this definition">¶</a></dt>
+<dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">=</span> <span class="n">Usuari</span><span class="p">(</span><span class="s2">&quot;LOLA&quot;</span><span class="p">,</span> <span class="s2">&quot;LOLA@gmail.com&quot;</span><span class="p">,</span> <span class="s2">&quot;hola&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="o">.</span><span class="n">get_email</span><span class="p">()</span>
+<span class="go">&#39;LOLA@gmail.com&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="usuari.Usuari.get_password">
+<span class="sig-name descname"><span class="pre">get_password</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#usuari.Usuari.get_password" title="Link to this definition">¶</a></dt>
+<dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">u</span> <span class="o">=</span> <span class="n">Usuari</span><span class="p">(</span><span class="s2">&quot;LOLA&quot;</span><span class="p">,</span> <span class="s2">&quot;LOLA@gmail.com&quot;</span><span class="p">,</span> <span class="s2">&quot;hola&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">u</span><span class="o">.</span><span class="n">get_password</span><span class="p">()</span>
+<span class="go">&#39;jqnc&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="usuari.xifrat_cesar">
+<span class="sig-prename descclassname"><span class="pre">usuari.</span></span><span class="sig-name descname"><span class="pre">xifrat_cesar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#usuari.xifrat_cesar" title="Link to this definition">¶</a></dt>
+<dd><p>Encripta un text desplacant cada lletra 2 posicions.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">xifrat_cesar</span><span class="p">(</span><span class="s2">&quot;abc&quot;</span><span class="p">)</span>
+<span class="go">&#39;cde&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">xifrat_cesar</span><span class="p">(</span><span class="s2">&quot;abracadabra&quot;</span><span class="p">)</span>
+<span class="go">&#39;cdtcecfcdtc&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<p id="module-post">Modul post.py</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="post.Hashtag">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post.</span></span><span class="sig-name descname"><span class="pre">Hashtag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post.Hashtag" title="Link to this definition">¶</a></dt>
+<dd><p>Representa un hashtag de iTICApp.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">h1</span> <span class="o">=</span> <span class="n">Hashtag</span><span class="p">(</span><span class="s2">&quot;adventure&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h1</span><span class="o">.</span><span class="n">id</span>
+<span class="go">&#39;adventure&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span>
+<span class="go">#adventure</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h1</span> <span class="o">==</span> <span class="n">Hashtag</span><span class="p">(</span><span class="s2">&quot;winter&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h1</span> <span class="o">==</span> <span class="n">Hashtag</span><span class="p">(</span><span class="s2">&quot;adventure&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="post.Post">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">post.</span></span><span class="sig-name descname"><span class="pre">Post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contingut</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#post.Post" title="Link to this definition">¶</a></dt>
+<dd><p>Representa un post de iTICApp.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p1</span> <span class="o">=</span> <span class="n">Post</span><span class="p">(</span><span class="s2">&quot;hola que tal&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p1</span><span class="o">.</span><span class="n">contingut</span>
+<span class="go">&#39;hola que tal&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p1</span><span class="o">.</span><span class="n">id</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="post.Post.get_date">
+<span class="sig-name descname"><span class="pre">get_date</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#post.Post.get_date" title="Link to this definition">¶</a></dt>
+<dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Post</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_date</span><span class="p">())</span>
+<span class="go">&lt;class &#39;str&#39;&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-xarxaSocial">Modul xarxaSocial.py</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="xarxaSocial.iTICApp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xarxaSocial.</span></span><span class="sig-name descname"><span class="pre">iTICApp</span></span><a class="headerlink" href="#xarxaSocial.iTICApp" title="Link to this definition">¶</a></dt>
+<dd><p>Representa la xarxa social iTICApp.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">iTICApp</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">afegeix_usuari</span><span class="p">(</span><span class="s2">&quot;AH39&quot;</span><span class="p">,</span> <span class="s2">&quot;AH39@gmail.com&quot;</span><span class="p">,</span> <span class="s2">&quot;hola&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">afegeix_hashtag</span><span class="p">(</span><span class="s2">&quot;adventure&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">publicar_post</span><span class="p">(</span><span class="s2">&quot;AH39&quot;</span><span class="p">,</span> <span class="s2">&quot;zzz&quot;</span><span class="p">,</span> <span class="s2">&quot;primer post&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="xarxaSocial.iTICApp.afegeix_hashtag">
+<span class="sig-name descname"><span class="pre">afegeix_hashtag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xarxaSocial.iTICApp.afegeix_hashtag" title="Link to this definition">¶</a></dt>
+<dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">iTICApp</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">afegeix_hashtag</span><span class="p">(</span><span class="s2">&quot;XXXX&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">afegeix_hashtag</span><span class="p">(</span><span class="s2">&quot;XXXX&quot;</span><span class="p">)</span>
+<span class="go">Error: ja existeix aquest hashtag</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xarxaSocial.iTICApp.afegeix_usuari">
+<span class="sig-name descname"><span class="pre">afegeix_usuari</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nick</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xarxaSocial.iTICApp.afegeix_usuari" title="Link to this definition">¶</a></dt>
+<dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">iTICApp</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">afegeix_usuari</span><span class="p">(</span><span class="s2">&quot;AH39&quot;</span><span class="p">,</span> <span class="s2">&quot;AH39@gmail.com&quot;</span><span class="p">,</span> <span class="s2">&quot;hola&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">afegeix_usuari</span><span class="p">(</span><span class="s2">&quot;AH39&quot;</span><span class="p">,</span> <span class="s2">&quot;AH39@gmail.com&quot;</span><span class="p">,</span> <span class="s2">&quot;hola&quot;</span><span class="p">)</span>
+<span class="go">Error: ja existeix un usuari amb aquest nick</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xarxaSocial.iTICApp.llistarPostsUser">
+<span class="sig-name descname"><span class="pre">llistarPostsUser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nick</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xarxaSocial.iTICApp.llistarPostsUser" title="Link to this definition">¶</a></dt>
+<dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">iTICApp</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">afegeix_usuari</span><span class="p">(</span><span class="s2">&quot;AH39&quot;</span><span class="p">,</span> <span class="s2">&quot;AH39@gmail.com&quot;</span><span class="p">,</span> <span class="s2">&quot;hola&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">afegeix_hashtag</span><span class="p">(</span><span class="s2">&quot;zzzzzz&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">publicar_post</span><span class="p">(</span><span class="s2">&quot;AH39&quot;</span><span class="p">,</span> <span class="s2">&quot;jajajaj&quot;</span><span class="p">,</span> <span class="s2">&quot;primer post&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">llistarPostsUser</span><span class="p">(</span><span class="s2">&quot;AH39&quot;</span><span class="p">)</span>
+<span class="go">[&#39;primer post&#39;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xarxaSocial.iTICApp.publicar_post">
+<span class="sig-name descname"><span class="pre">publicar_post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nick</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_hashtag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contingut_post</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xarxaSocial.iTICApp.publicar_post" title="Link to this definition">¶</a></dt>
+<dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">iTICApp</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">afegeix_usuari</span><span class="p">(</span><span class="s2">&quot;AH39&quot;</span><span class="p">,</span> <span class="s2">&quot;AH39@gmail.com&quot;</span><span class="p">,</span> <span class="s2">&quot;hola&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">afegeix_hashtag</span><span class="p">(</span><span class="s2">&quot;YYYY&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">publicar_post</span><span class="p">(</span><span class="s2">&quot;AH39&quot;</span><span class="p">,</span> <span class="s2">&quot;adventure&quot;</span><span class="p">,</span> <span class="s2">&quot;primer post&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">publicar_post</span><span class="p">(</span><span class="s2">&quot;NOEXISTE&quot;</span><span class="p">,</span> <span class="s2">&quot;adventure&quot;</span><span class="p">,</span> <span class="s2">&quot;primer post&quot;</span><span class="p">)</span>
+<span class="go">Error: no existeix aquest usuari</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Índice</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Índice de Módulos</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Página de Búsqueda</span></a></p></li>
+</ul>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Practica2</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2026, AhmedAzizSharif.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
