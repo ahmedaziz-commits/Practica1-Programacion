@@ -1,5 +1,5 @@
 import time 
-
+"prueb"
 class Post:
     contador_id=1
     def __init__(self,contenido):
