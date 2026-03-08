@@ -4,7 +4,7 @@ class Post:
     contador_id=1
     def __init__(self,contenido):
         self.id = Post.contador_id 
-        Post.contador_id += 1
+        Post.contador_id += 1 "es"
         self.info = contenido 
         self.date = time.ctime()
 
@@ -38,4 +38,5 @@ if __name__=='__main__':
     h1=Hashtag("adventure")
     h2=Hashtag("winter")
     print(h1)
+
     print(h1==h2)
